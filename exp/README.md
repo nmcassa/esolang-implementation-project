@@ -19,6 +19,8 @@ The interpreter for this is very loose but it fits his examples and should work 
 {<|^^^^^^^^^^^^^^^^^| x |^^^^|>}
 ```
 
+### How to use
+
 ```
 python interpret.py hello.exp
 ```
