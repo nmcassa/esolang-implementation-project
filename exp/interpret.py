@@ -1,17 +1,26 @@
 import sys
 
 def check_syntax(line):
+    allowed_spaces = [" ", "<", ">", "x", "X", "/", "+", "-"]
+    
     #empty lines are allowed
     if len(line) == 0:
         return False
     
-    first = line[0]
-    second = line[1]
-    
-    if first != "{":
+    i = 0
+
+    while i < len(line):
+        if line[i] == " ":
+            if line[i-1] not in allowed_spaces and line[i+1] not in allowed_spaces:
+                raise Exception("Syntax Error")
+        if line[i] == "<" and line[i+1] == ">":
+            raise Exception("Syntax Error")
+        i += 1
+        
+    if line[0] != "{":
         raise Exception("Syntax Error")
     
-    is_int = True if second == "{" else False
+    is_int = True if line[1] == "{" else False
 
     return is_int
 
