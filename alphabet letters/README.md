@@ -1,5 +1,5 @@
 # alpha-letters interpreter
- An interpreter for the [esolang alpha letters](https://esolangs.org/wiki/Alphabet_letters) by unknown
+ An interpreter for the stack based [esolang alpha letters](https://esolangs.org/wiki/Alphabet_letters) by unknown
  
 ## Hello World program (ex.alpahletters)
 

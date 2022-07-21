@@ -1,5 +1,7 @@
 # 11CORTLANG
 
+[11CORTLANG](https://esolangs.org/wiki/11CORTLANG) is a stack based language by [Cortex](https://esolangs.org/wiki/User:Cortex) which just uses 0, 1 and newline. The null program is a cat program
+
 ## diff
 
 I ended up changing some parts of this esolang
