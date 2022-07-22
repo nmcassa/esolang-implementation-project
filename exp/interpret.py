@@ -1,6 +1,7 @@
 import sys
 
 def check_syntax(line):
+    allowed_chars = ["{", "}", "@", "~", "I", "|", "\n", "^"]
     allowed_spaces = [" ", "<", ">", "x", "X", "/", "+", "-"]
     
     #empty lines are allowed
@@ -10,6 +11,8 @@ def check_syntax(line):
     i = 0
 
     while i < len(line):
+        if line[i] not in allowed_chars and line[i] not in allowed_spaces:
+            raise Exception("Syntax Error")
         if line[i] == " ":
             if line[i-1] not in allowed_spaces and line[i+1] not in allowed_spaces:
                 raise Exception("Syntax Error")

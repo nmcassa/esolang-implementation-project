@@ -7,3 +7,4 @@ Done:
  - [1BNWL](https://esolangs.org/wiki/1BNWL)
  - [alphabet letters](https://esolangs.org/wiki/Alphabet_letters)
  - [exp](https://esolangs.org/wiki/Exp)
+ - [inputfish](https://esolangs.org/wiki/Inputfish)

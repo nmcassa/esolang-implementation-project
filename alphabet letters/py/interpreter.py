@@ -30,9 +30,11 @@ def interpret(arr):
         if item == 'c':
             for num in stack:
                 print(chr(num), end='')
-
+                
+        if item == 'e':
+            exit()
+            
         
-
 if __name__ == "__main__":
     if len(sys.argv) == 1:
         raise Exception('\n\nPlease give .alphaletters file as an second arg')
