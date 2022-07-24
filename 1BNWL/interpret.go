@@ -75,7 +75,6 @@ func main() {
 						panic(oob)
 					}
 				}
-				i -= 1
 			}
 		}
 
