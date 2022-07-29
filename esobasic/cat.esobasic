@@ -1,0 +1,6 @@
+CLS
+INPUT a
+PRINTVAR a
+IF a
+GOTO 2
+END
