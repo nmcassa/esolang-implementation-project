@@ -157,6 +157,7 @@ int main() {
                             break;
                         }
                     }
+                    rotate(instructions, instructions + 1, instructions + 8);
                     i++;
                 }
                 i++;
@@ -168,6 +169,7 @@ int main() {
             int matching = 0;
             if (mem[pointer] != 0) {
                 while (i >= 0) {
+                    cout << i << " " << matching << " ";
                     //]
                     if (characters.at(i) == instructions[7]) {
                         matching++;
@@ -179,6 +181,7 @@ int main() {
                             break;
                         }
                     }
+                    rotate(instructions, instructions + 7, instructions + 8);
                     i--;
                 }
                 i--;
