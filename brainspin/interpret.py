@@ -35,15 +35,31 @@ def interpret(arr):
             stack[pointer] = int(input())
             
         if item == '[':
+            matching = 0
             if stack[pointer] == 0:
-                while arr[i] != ']':
+                while i < len(arr):
+                    if arr[i] == '[':
+                        matching += 1
+                    elif arr[i] == ']':
+                        if matching != 0:
+                            matching -= 1
+                        else:
+                            break
                     i += 1
                 i += 1
                 
         if item == ']':
             if stack[pointer] != 0:
-                while arr[i] != '[':
+                while i >= 0:
+                    if arr[i] == ']':
+                        matching += 1
+                    elif arr[i] == '[':
+                        if matching != 0:
+                            matching -= 1
+                        else:
+                            break
                     i -= 1
+                i -= 1
 
         if item == '*':
             pass
