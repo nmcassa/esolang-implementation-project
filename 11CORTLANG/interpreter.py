@@ -2,7 +2,6 @@ import sys
 import math
 
 def parser(lines):
-
     new_lines = []
 
     for line in lines:
@@ -43,8 +42,8 @@ def parser(lines):
     return new_lines
 
 stack = []
-def interpret(lines):
 
+def interpret(lines):
     i = 0
 
     while i < len(lines):

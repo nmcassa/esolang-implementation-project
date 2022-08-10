@@ -14,7 +14,6 @@ def remove_from_list(arr):
     return arr
 
 def interpret(arr):
-
     stack = [0, 0, 0]
     pointer = 0
     i = 0

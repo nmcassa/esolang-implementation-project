@@ -1,11 +1,17 @@
 import sys
 
+def check(item):
+    usable_characters = ['p', 'a', 's', 'm', 'd', 'z', 'c', 'e', ' ', '\n']
+
+    if item not in usable_characters:
+        raise Exception("Not an exceptable character")
+
 def interpret(arr):
-    
     stack = []
     pointer = 0
     
     for item in arr:
+        check(item)
 
         if item == 'p':
             pointer = 0
